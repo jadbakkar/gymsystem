@@ -1,4 +1,4 @@
-// ======= Toast system =======
+
 function showToast(message, type="success") {
     const toast = document.getElementById("toast");
     toast.textContent = message;
@@ -9,7 +9,7 @@ function showToast(message, type="success") {
     }, 3000);
 }
 
-// Optional: helper to check GET params
+
 function checkMsgParam() {
     const params = new URLSearchParams(window.location.search);
     const msg = params.get("msg");
@@ -20,5 +20,6 @@ function checkMsgParam() {
     else if(msg === "deleted") showToast("🗑️ Deleted successfully!", "error");
 }
 
-// Run on page load
+
+
 window.addEventListener("DOMContentLoaded", checkMsgParam);
