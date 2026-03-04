@@ -239,12 +239,6 @@ This is more than a workout — it’s a commitment to becoming stronger every d
         </div>
     </section>
 
-
-
-
-
-
-
     <section class="contact reveal">
         <div class="contact-content">
             <div class="contact-info"><p>jadbakkar03@gmail.com</p>
@@ -278,3 +272,4 @@ This is more than a workout — it’s a commitment to becoming stronger every d
     <script src="assets/js/script.js"></script>
 </body>
 </html>
+
