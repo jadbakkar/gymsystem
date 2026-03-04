@@ -31,7 +31,7 @@ const counterObserver = new IntersectionObserver((entries, observer) => {
 
             requestAnimationFrame(updateCount);
 
-            observer.unobserve(counter); // prevents restarting
+            observer.unobserve(counter); 
         }
     });
 }, {
@@ -57,8 +57,9 @@ const observer = new IntersectionObserver((entries) => {
 reveals.forEach(reveal => {
     observer.observe(reveal);
 });
- // Dynamically set data-text to match h1
+
     document.querySelectorAll('.fancy-text').forEach(el => {
       el.setAttribute('data-text', el.textContent);
     });
+
    
