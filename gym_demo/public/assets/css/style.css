@@ -7,39 +7,39 @@ html, body {
      box-sizing: border-box;
 }
 body {
-    background-color: black;       /* page background color */
-    font-family: 'teko', sans-serif; /* main font */
-    color: rgb(241, 185, 0);       /* default text color */
-    position: relative;            /* for positioning pseudo-elements */
-    min-height: 200vh;             /* so the page can scroll */
+    background-color: black;       
+    font-family: 'teko', sans-serif; 
+    color: rgb(241, 185, 0);       
+    position: relative;            
+    min-height: 200vh;            
     overflow-x: hidden;
 }
 /* =========================
    LOGO COLORS
 ========================= */
 .white {
-    color: white;                 /* white text for logo or highlights */
+    color: white;                 
 }
 
 .yellow {
-    color: yellow;                /* yellow text for logo or highlights */
+    color: yellow;                
 }
 /* =========================
    LOGO CONTAINER
 ========================= */
 .logo{
   
-    display: inline-block;        /* inline block layout */
+    display: inline-block;        
 }
 @media (max-width: 768px) {
     .logo-text {
         font-size: 40px;
         line-height: 1;
-        text-align: center;      /* optional for centering */
+        text-align: center;     
     }
 
     .logo-text span {
-        display: inline-block;   /* fixes sizing issues */
+        display: inline-block;  
         line-height: 1;
     }
 }
@@ -136,42 +136,42 @@ nav a:hover {
    HERO SECTION
 ========================= */
 .hero {
-    height: 70vh;                 /* hero section height */
-    background: url("gym.jpg") center/cover no-repeat; /* hero image */
-    display: flex;                /* center content */
+    height: 70vh;                 
+    background: url("gym.jpg") center/cover no-repeat; 
+    display: flex;                
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);                 /* text color on hero */
+    color: rgb(255, 255, 255);                 
     margin: 0 20px;
 
 }
 .hero-content {
-    position: relative;           /* relative positioning */
-    color: rgb(255, 255, 255);    /* text color */
+    position: relative;           
+    color: rgb(255, 255, 255);    
 }
 .hero-content h2{
-    font-size: 50px;              /* hero title size */
-    margin-bottom: 20px;          /* spacing below title */
-    font-weight: bold;            /* bold text */
-    text-transform: uppercase;    /* uppercase letters */
+    font-size: 50px;              
+    margin-bottom: 20px;          
+    font-weight: bold;            
+    text-transform: uppercase;  
 }
 .hero-content p{
-    font-size: 25px;              /* paragraph size */
-    margin-bottom: 30px;          /* spacing below paragraph */
+    font-size: 25px;              
+    margin-bottom: 30px;          
 }
 .hero-content .btn{
-     text-decoration: none;          /* remove underline */
-    color: rgb(0, 0, 0);                   /* text color */
-    display: inline-block;          /* block-like inline */
-    margin-top: 20px;               /* spacing above button */
-    padding: 10px 40px;             /* button padding */
-    background: rgb(224, 240, 0);             /* button background */
-    transition: 0.3s;               /* hover smooth */
+     text-decoration: none;       
+    color: rgb(0, 0, 0);                  
+    display: inline-block;         
+    margin-top: 20px;               
+    padding: 10px 40px;            
+    background: rgb(224, 240, 0);             
+    transition: 0.3s;               
     font-size: 25PX;        
 }
 .hero-content .btn:hover {
-    background:rgb(110, 110, 110); /* hover background */
-    color: rgb(255, 255, 255);      /* hover text color */
+    background:rgb(110, 110, 110); 
+    color: rgb(255, 255, 255);      
 }
 @media (max-width:768px) {
     .hero {
@@ -193,7 +193,7 @@ nav a:hover {
 
 
 /*/////////////
-////////////// FANCY TEXT
+  FANCY TEXT
 //////////////*/
 .fancy-text {
     position: relative;
@@ -209,9 +209,9 @@ nav a:hover {
       top: 3%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 100px; /* bigger version behind */
-      color: rgba(153, 153, 153, 0.452); /* faint background */
-      z-index: -1; /* behind main text */
+      font-size: 100px; 
+      color: rgba(153, 153, 153, 0.452); 
+      z-index: -1; 
       white-space: nowrap;
 }
 /* =========================
@@ -273,8 +273,8 @@ nav a:hover {
 
 .hero-2-text {
     flex: 1;
-    color: rgb(255, 255, 255); /* gold text */
-    max-width: 350px;        /* prevent stretching */
+    color: rgb(255, 255, 255); 
+    max-width: 350px;        
     max-height: 400px;
 }
 
@@ -289,7 +289,7 @@ nav a:hover {
 @media (max-width: 768px) {
     .hero-content-2 {
         flex-direction: column;
-        align-items: center; /* center everything */
+        align-items: center; 
     }
 
     .about-img {
@@ -324,8 +324,8 @@ nav a:hover {
 }
 .team-items {
     position: relative;
-    max-width: 1000px;   /* control total width */
-    margin: 0 auto;      /* center it */
+    max-width: 1000px;   
+    margin: 0 auto;      
     z-index: 1;
 }
 
@@ -381,13 +381,13 @@ nav a:hover {
 .team-items::before {
     content: "";
     position: absolute;
-    top: 20%;             /* adjust vertical position */
-    left: 50%;            /* start at the center of viewport */
-    width: 200vw;         /* wide enough to cover both edges */
-    height: 250px;        /* same as before */
+    top: 20%;             
+    left: 50%;            
+    width: 200vw;         
+    height: 250px;        
     background: rgb(246, 255, 0);
-    transform: rotate(-15deg) translateX(-50%); /* rotate and center */
-    z-index: 0;           /* behind images */
+    transform: rotate(-15deg) translateX(-50%); 
+    z-index: 0;    
 }
 
 
@@ -513,7 +513,7 @@ nav a:hover {
         counter
 =======================*/
 .stats-section {
-    background-color: #FFD700; /* yellow */
+    background-color: #FFD700; 
     margin-top: 100px;
     margin-bottom: 100px;
     color: black;
@@ -562,9 +562,9 @@ nav a:hover {
     text-align: center;
 }
 .pricing-cards {
-    display: flex;                  /* arrange cards in a row */
-    justify-content: center;        /* center horizontally */
-    align-items: center;            /* center vertically */
+    display: flex;                 
+    justify-content: center;        
+    align-items: center;           
     text-align: center;
 }
 /* =========================
@@ -582,23 +582,23 @@ nav a:hover {
 .middel{
     position: relative;
     z-index: 2;
-    background-color: rgb(243, 243, 243);        /* middle card color */
-    width: 200px;                   /* slightly wider */
-    height: 490px;                  /* taller */
-    align-self: center;             /* vertically center with others */
+    background-color: rgb(243, 243, 243);        
+    width: 200px;                   
+    height: 490px;                  
+    align-self: center;             
     transition: all 0.3s ease;
     box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.9),     /* depth */
-    0 0 15px rgba(255, 255, 255, 0.08); /* subtle edge glow */
+    0 20px 50px rgba(0, 0, 0, 0.9),     
+    0 0 15px rgba(255, 255, 255, 0.08); 
 
 }
 .card h2 {
     color: black;
 }
 .card h3 {
-    font-family: 'Oswald', sans-serif; /* card heading font */
+    font-family: 'Oswald', sans-serif; 
     font-size: 25px;
-    margin-bottom: 15px;           /* spacing below heading */
+    margin-bottom: 15px;           
 }
 .price{
     font-size: 30px;
@@ -610,19 +610,19 @@ nav a:hover {
     
 }
 .card .btn {
-    text-decoration: none;          /* remove underline */
-    color: black;                   /* text color */
-    display: inline-block;          /* block-like inline */
-    padding: 10px 40px;             /* button padding */
-    background: rgb(240, 240, 0);             /* button background */
-    transition: 0.3s;               /* hover smooth */
+    text-decoration: none;         
+    color: black;                   
+    display: inline-block;          
+    padding: 10px 40px;             
+    background: rgb(240, 240, 0);       
+    transition: 0.3s;               
     font-size: 25PX;
     transform: scaley(0.8);
 }
 
 .card .btn:hover {
-    background-color: rgb(77, 77, 77);         /* hover background */
-    color: white;                   /* hover text color */
+    background-color: rgb(77, 77, 77);         
+    color: white;                   
 }
 .icon {
     width: 80px;
@@ -674,17 +674,17 @@ nav a:hover {
 /* For screens smaller than 768px (phones/tablets) */
 @media (max-width: 768px) {
     .pricing-cards {
-        justify-content: space-around; /* keep some spacing */
+        justify-content: space-around; 
     }
 
     .card, .middel {
-        width: 150px;      /* smaller width */
-        height: 300px;     /* smaller height */
-        padding: 10px;     /* reduce padding */
+        width: 150px;     
+        height: 300px;     
+        padding: 10px;     
     }
 
     .middel {
-        width: 180px;      /* slightly bigger than normal card */
+        width: 180px;
         height: 350px;
     }
 
@@ -726,7 +726,7 @@ nav a:hover {
     font-weight: 400;
 }
 
-/* Mobile version – smaller circle and check */
+
 .features li::before {
     content: "";
     position: absolute;
@@ -734,7 +734,7 @@ nav a:hover {
     top: 50%;
     transform: translateY(-50%);
     
-    width: 15px;          /* slightly bigger so check fits */
+    width: 15px;          
     height: 15px;
     border-radius: 50%;
     background: transparent;
@@ -745,7 +745,7 @@ nav a:hover {
 .features li::after {
     content: "";
     position: absolute;
-    left: 6px;             /* move checkmark inside the circle */
+    left: 6px;             
     top: 50%;
     width: 4px;
     height: 8px;
@@ -757,13 +757,13 @@ nav a:hover {
 @media (max-width: 360px) {
 
     .card, .middel {
-        max-width: 100%;      /* cards take almost full width */
-        padding: 10px;        /* reduce padding */
-        margin: 0 auto 10px;  /* stack vertically with spacing */
+        max-width: 100%;      
+        padding: 10px;        
+        margin: 0 auto 10px;  
     }
 
     .card h2 {
-        font-size: 16px;      /* smaller headings */
+        font-size: 16px;      
         line-height: 1.1;
     }
 
@@ -773,13 +773,13 @@ nav a:hover {
     }
 
     .features li {
-        font-size: 10px;      /* small text for tiny screens */
+        font-size: 10px;      
         padding-left: 12px;
     }
 
     .card .btn, .btn2 {
         font-size: 12px;
-        padding: 6px 10px;    /* smaller button */
+        padding: 6px 10px;    
     }
 
     .icon {
@@ -804,7 +804,7 @@ nav a:hover {
 }
 h2 {
     font-family: 'Teko', sans-serif;
-    font-weight: 400;   /* lighter */
+    font-weight: 400;   
 }
 /*================
        reveal
@@ -820,35 +820,35 @@ h2 {
     transform: translateY(0);
 }
 .team-img .reveal {
-    opacity: 0;                      /* start invisible */
-    transform: translateY(50px);     /* start slightly lower */
+    opacity: 0;                      
+    transform: translateY(50px);     
     transition: transform 0.5s ease, opacity 0.5s ease;
-    will-change: transform, opacity; /* optimize for GPU */
+    will-change: transform, opacity; 
 }
 
 .team-img .reveal.active {
-    opacity: 1;                      /* fade in */
-    transform: translateY(0);        /* move into place */
+    opacity: 1;                      
+    transform: translateY(0);        
 }
 /* =========================
    CONTACT SECTION
 ========================= */
 .contact {
-    background-color: rgb(255, 255, 0); /* yellow background */
+    background-color: rgb(255, 255, 0);
     color: black;
     padding: 10px 5px;
 }
 
 .contact-content {
     display: flex;
-    justify-content: space-between; /* spread columns */
-    flex-wrap: wrap;                /* allow wrapping on smaller screens */
-    gap: 20px;                      /* spacing between columns */
+    justify-content: space-between; 
+    flex-wrap: wrap;                
+    gap: 20px;                     
 }
 
 /* Column 1: Contact Info */
 .contact-info {
-    width: 33%;                     /* each column 1/3 of section */
+    width: 33%;                     
     line-height: 1;
 }
 .contact-info p {
@@ -866,8 +866,8 @@ h2 {
 /* Column 3: Social Icons */
 .social-icons {
     width: 33%;
-    display: flex;                  /* horizontal layout for icons */
-    justify-content: flex-start;    /* align icons to left */
+    display: flex;                  
+    justify-content: flex-start;    
     align-items: center;
     gap: 15px;
 }
@@ -891,16 +891,16 @@ h2 {
     background-color: darkgray;
 }
 .social-link img {
-    transition: 0.3s ease; /* smooth hover */
+    transition: 0.3s ease; 
 }
 
 /* Facebook hover */
 .social-link.facebook img {
-    content: url('../assets/facebook.png'); /* default image */
+    content: url('../assets/facebook.png'); 
 }
 
 .social-link.facebook:hover img {
-    content: url('../assets/facebook2.png'); /* hover image */
+    content: url('../assets/facebook2.png'); 
 }
 
 /* WhatsApp hover */
@@ -926,8 +926,8 @@ h2 {
     .contact-info,
     .links,
     .social-icons {
-        width: 100%;               /* full width on mobile */
-        margin-bottom: 20px;       /* spacing between stacked columns */
+        width: 100%;               
+        margin-bottom: 20px;      
     }
     .contact-content {
         display: flex;
@@ -946,8 +946,8 @@ h2 {
 }
 
 .trainers-page h1 {
-    font-size: 60px;               /* big title */
-    color: #FFD700;                 /* gold/yellow */
+    font-size: 60px;             
+    color: #FFD700;                 
     margin-bottom: 50px;
     text-shadow: 2px 2px 5px black;
 }
@@ -955,14 +955,14 @@ h2 {
 .trainers-page .trainers-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;        /* center horizontally */
-    gap: 40px;                      /* space between trainer cards */
+    justify-content: center;       
+    gap: 40px;                      
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .trainers-page .trainer-card {
-    background-color: #1a1a1a;      /* dark card background */
+    background-color: #1a1a1a;     
     border-radius: 15px;
     padding: 30px 20px;
     width: 250px;
@@ -977,8 +977,8 @@ h2 {
 }
 
 .trainers-page .trainer-card h2 {
-    font-size: 30px;               /* big name */
-    color: #FF4500;                /* different color */
+    font-size: 30px;               
+    color: #FF4500;                
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -990,7 +990,7 @@ h2 {
 }
 
 .trainers-page .trainer-card strong {
-    color: #FFD700;                /* highlight label */
+    color: #FFD700;                
 }
 
 /* Mobile responsive */
@@ -999,7 +999,7 @@ h2 {
         font-size: 45px;
     }
     .trainers-page .trainer-card {
-        width: 80%;                 /* full width on small screens */
+        width: 80%;                
         padding: 20px;
     }
     .trainers-page .trainer-card h2 {
@@ -1013,12 +1013,12 @@ h2 {
    CONTACT PAGE STYLES
 ========================= */
 .contact-page {
-    max-width: 600px;             /* center the form */
-    margin: 50px auto;            /* auto margins */
-    background-color: black;      /* page background */
+    max-width: 600px;            
+    margin: 50px auto;            
+    background-color: black;      
     padding: 30px;
     border-radius: 10px;
-    color: rgb(255, 255, 255);                /* main text color */
+    color: rgb(255, 255, 255);               
     font-family: 'Teko', sans-serif;
     text-align: center;
 }
@@ -1076,4 +1076,5 @@ h2 {
 .contact-page p {
     font-size: 18px;
     margin-top: 10px;
+
 }
