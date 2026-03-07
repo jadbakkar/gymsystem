@@ -7,6 +7,7 @@ The owner can add, edit, and delete members and trainers, as well as view messag
 
 The frontend displays the main page, trainer listings, and a contact page, while the backend handles all administrative tasks.  
 Passwords are securely hashed, and all CRUD operations are implemented for a professional, functional system.
+username: jad /Password:1234
 
 
 ### Frontend (User-Facing)
